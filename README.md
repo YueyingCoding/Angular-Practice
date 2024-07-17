@@ -75,6 +75,9 @@ https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
 ### Carousel
 ### Calculator
 ### Calendar
+### Reactive Form
+### OnPush
+### Custom Pipe
 
 ## Tips and Resources:
 ### Angular Offcial Document
@@ -102,3 +105,4 @@ Angular 17 Grammer
 
 ```
 
+## Angular’s main libraries, versions, and functionalities:
