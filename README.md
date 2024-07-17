@@ -29,9 +29,9 @@ https://stackblitz.com/edit/angular-si85qq?file=src%2Fapp%2Fapp.component.ts
   <!-- 十进制Unicode编码 -->
   <p>Decimal Code: &amp;#9733; &#9733;</p>
   <!-- 十六进制Unicode编码 -->
-  <p>Hexadecimal Code: &amp;#9733; &#x2605;</p>
+  <p>Hexadecimal Code: &amp;#x2605; &#x2605;</p>
   <!-- 命名字符实体 -->
-  <p>Named Entity: &amp;#9733; &starf;</p>
+  <p>Named Entity: &amp;starf; &starf;</p>
 
 ### Auto Complete Google Search
 https://github.com/cocodingnut/AutoComplete
@@ -54,20 +54,32 @@ https://stackblitz.com/edit/stackblitz-starters-etptgp?file=package.json
 https://github.com/cocodingnut/InfiniteScroll
 (Service 写在component里)
 
-## Other:
+## Other Practice:
 ### Behavior Subject
 https://stackblitz.com/edit/angular-q3ywqs?file=src%2Fapp%2Fapp.component.ts
 
 ### Custom Attribute Directive
 https://stackblitz.com/edit/angular-15-starter-pack-vmtsth?file=src%2Fapp%2Fapp.component.ts
+
+### @Output and Event Emitter
+https://stackblitz.com/edit/stackblitz-starters-ng2sj5?file=package.json
+
 ### Cards Widget
 https://stackblitz.com/edit/stackblitz-starters-adgfw3?file=src%2Fmain.ts
 
 ### Template Driven Form
 https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
 
+### Todo List
+### Hooks & Change Detection
+### Carousel
+### Calculator
+### Calendar
 
-## Tips:
+## Tips and Resources:
+### Angular Offcial Document
+https://angular.dev/
+
 Angular 17 Grammer
 ```typescript
  template: `<ul>
@@ -89,3 +101,4 @@ Angular 17 Grammer
 @for (item of upArray; track item;  let i = $index){}
 
 ```
+
