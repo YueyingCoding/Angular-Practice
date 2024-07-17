@@ -27,11 +27,11 @@ https://stackblitz.com/edit/angular-txqexp?file=src%2Fapp%2Fapp.component.ts
 ### Display Star Ratings
 https://stackblitz.com/edit/angular-si85qq?file=src%2Fapp%2Fapp.component.ts
   <!-- 十进制Unicode编码 -->
-  <p>Decimal Code: &#9733;</p>
+  <p>Decimal Code: &amp;#9733; &#9733;</p>
   <!-- 十六进制Unicode编码 -->
-  <p>Hexadecimal Code: &#x2605;</p>
+  <p>Hexadecimal Code: &amp;#9733; &#x2605;</p>
   <!-- 命名字符实体 -->
-  <p>Named Entity: &starf;</p>
+  <p>Named Entity: &amp;#9733; &starf;</p>
 
 ### Auto Complete Google Search
 https://github.com/cocodingnut/AutoComplete
