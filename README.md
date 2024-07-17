@@ -26,6 +26,12 @@ https://stackblitz.com/edit/angular-txqexp?file=src%2Fapp%2Fapp.component.ts
 ## OA*2 (Jun 27)
 ### Display Star Ratings
 https://stackblitz.com/edit/angular-si85qq?file=src%2Fapp%2Fapp.component.ts
+  <!-- 十进制Unicode编码 -->
+  <p>Decimal Code: &#9733;</p>
+  <!-- 十六进制Unicode编码 -->
+  <p>Hexadecimal Code: &#x2605;</p>
+  <!-- 命名字符实体 -->
+  <p>Named Entity: &starf;</p>
 
 ### Auto Complete Google Search
 https://github.com/cocodingnut/AutoComplete
@@ -46,3 +52,40 @@ https://stackblitz.com/edit/stackblitz-starters-etptgp?file=package.json
 
 ## Infinite Scroll (Jul 15)
 https://github.com/cocodingnut/InfiniteScroll
+(Service 写在component里)
+
+## Other:
+### Behavior Subject
+https://stackblitz.com/edit/angular-q3ywqs?file=src%2Fapp%2Fapp.component.ts
+
+### Custom Attribute Directive
+https://stackblitz.com/edit/angular-15-starter-pack-vmtsth?file=src%2Fapp%2Fapp.component.ts
+### Cards Widget
+https://stackblitz.com/edit/stackblitz-starters-adgfw3?file=src%2Fmain.ts
+
+### Template Driven Form
+https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
+
+
+## Tips:
+Angular 17 Grammer
+```typescript
+ template: `<ul>
+            @for (address of addresses; track address){
+               <li>
+                <app-address [address]='address'></app-address>
+               </li>
+            }
+             </ul>`
+
+  template: `<ul>
+               <li *ngFor="let address of addresses">
+                <app-address [address]='address'></app-address>
+               </li>
+             </ul>`
+
+
+*ngFor="let item of upArray; let i = index" 
+@for (item of upArray; track item;  let i = $index){}
+
+```
