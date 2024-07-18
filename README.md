@@ -1,6 +1,5 @@
 # Angular-Practice
 A compilation of Angular coding practices for the MEAN Stack (3.25 batch).
-See the description in the readme files.
 
 ## Angular Testing (May 03)
 https://github.com/cocodingnut/angular-testing
@@ -52,7 +51,10 @@ https://stackblitz.com/edit/stackblitz-starters-etptgp?file=package.json
 
 ## Infinite Scroll (Jul 15)
 https://github.com/cocodingnut/InfiniteScroll
-(Service 写在component里)
+
+## Change Detection from Finra Interview (May 29, Jul 17)
+https://stackblitz.com/edit/angular-ivy-ikrznp?file=src%2Fapp%2Fhello.component.ts
+https://stackblitz.com/edit/angular-wx49s6?file=src%2Fapp%2Fhello.component.ts,src%2Fapp%2Fapp.component.html,src%2Fapp%2Fapp.component.ts,src%2Findex.html
 
 ## Other Practice:
 ### Behavior Subject
@@ -71,7 +73,7 @@ https://stackblitz.com/edit/stackblitz-starters-adgfw3?file=src%2Fmain.ts
 https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
 
 ### Todo List
-### Hooks & Change Detection
+
 ### Carousel
 ### Calculator
 ### Calendar
