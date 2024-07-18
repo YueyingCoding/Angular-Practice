@@ -78,7 +78,6 @@ https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
 ### Calculator
 ### Calendar
 ### Reactive Form
-### OnPush
 ### Custom Pipe
 
 ## Tips and Resources:
