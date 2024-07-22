@@ -56,6 +56,9 @@ https://github.com/cocodingnut/InfiniteScroll
 https://stackblitz.com/edit/angular-ivy-ikrznp?file=src%2Fapp%2Fhello.component.ts
 https://stackblitz.com/edit/angular-wx49s6?file=src%2Fapp%2Fhello.component.ts,src%2Fapp%2Fapp.component.html,src%2Fapp%2Fapp.component.ts,src%2Findex.html
 
+## Flip Cards (Jul 22)
+https://stackblitz.com/edit/stackblitz-starters-vaekqp?file=package.json
+
 ## Other Practice:
 ### Behavior Subject
 https://stackblitz.com/edit/angular-q3ywqs?file=src%2Fapp%2Fapp.component.ts
