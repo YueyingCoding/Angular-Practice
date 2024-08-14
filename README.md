@@ -102,11 +102,16 @@ Angular 17 Grammer
                 <app-address [address]='address'></app-address>
                </li>
              </ul>`
-
+```
 
 *ngFor="let item of upArray; let i = index" 
 @for (item of upArray; track item;  let i = $index){}
 
+```typescript
+@if (){
+}
+@else {
+}
 ```
 
 ## Angular’s main libraries, versions, and functionalities:
