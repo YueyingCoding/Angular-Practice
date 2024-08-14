@@ -131,41 +131,13 @@ Angular 17 Grammer
 ## Angular’s main libraries, versions, and functionalities:
 import { CommonModule } from '@angular/common'; 
 What CommonModule Includes:
-	1.	Common Directives:
-	•	NgIf: Conditionally includes or excludes a template based on the value of an expression.
-	•	NgForOf: Iterates over a collection (like an array) and repeats a template for each item.
-	•	NgSwitch, NgSwitchCase, NgSwitchDefault: Allows for conditional rendering of templates based on the value of an expression.
-	•	NgClass, NgStyle: Dynamically adds or removes CSS classes and styles based on expressions.
-	2.	Common Pipes:
-	•	DatePipe: Formats dates according to a given format.
-	•	UpperCasePipe, LowerCasePipe: Transforms text to uppercase or lowercase.
-	•	CurrencyPipe: Formats numbers as currency.
-	•	JsonPipe: Converts objects to JSON strings.
-	•	DecimalPipe: Formats numbers with decimal points.
-	•	PercentPipe: Formats numbers as percentages.
-	3.	Common Services:
-	•	Location: Provides access to the browser’s URL and allows for navigation.
-	•	Title: Allows setting the title of the current HTML document.
+	1. Common Directives: NgIf, NgFor, NgClass, NgStyle
+	2. Common Pipes: DatePipe, UpperCasePipe, CurrencyPipe, JsonPipe
+	3. Common Services: Location: Provides access to the browser’s URL and allows for navigation.
 
  
 Array:
 `Array.from()` 是一个 JavaScript 内置方法，用于从类数组对象或可迭代对象（如 `Map`、`Set`、字符串）创建一个新的数组实例。这个方法非常灵活，也可以用于数组的浅拷贝、将对象转化为数组，以及通过映射函数创建特定模式的数组。
-
-### 语法
-
-```javascript
-Array.from(arrayLike [, mapFn [, thisArg]])
-```
-
-### 参数
-
-1. **`arrayLike`**: 必需。类数组对象或可迭代对象，例如 `arguments` 对象、`NodeList`、`Set`、`Map` 等。
-  
-2. **`mapFn`**: 可选。一个映射函数，用于在新数组创建时对每个元素进行处理（类似于 `Array.prototype.map`）。这个函数会接收两个参数：
-   - 当前元素的值
-   - 当前元素的索引
-
-3. **`thisArg`**: 可选。执行 `mapFn` 函数时 `this` 的值。
 
 ### 示例用法
 
