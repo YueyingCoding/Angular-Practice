@@ -131,9 +131,9 @@ Angular 17 Grammer
 ## Angular’s main libraries, versions, and functionalities:
 import { CommonModule } from '@angular/common'; 
 What CommonModule Includes:
-	1. Common Directives: NgIf, NgFor, NgClass, NgStyle
-	2. Common Pipes: DatePipe, UpperCasePipe, CurrencyPipe, JsonPipe
-	3. Common Services: Location: Provides access to the browser’s URL and allows for navigation.
+1. Common Directives: NgIf, NgFor, NgClass, NgStyle
+2. Common Pipes: DatePipe, UpperCasePipe, CurrencyPipe, JsonPipe
+3. Common Services: Location: Provides access to the browser’s URL and allows for navigation.
 
  
 Array:
