@@ -199,14 +199,9 @@ let arr = Array.from({ length: 5 }, (_, i) => i + 1);
 console.log(arr); // [1, 2, 3, 4, 5]
 ```
 
-### 应用场景
+```javascript
+string.substr(start, length)
+string.slice(start, end) - End position (up to, but not including).
+string.substring(start, end) - End position (up to, but not including).(substring does not support negative indexing.)
+```
 
-- **将类数组对象转化为数组**: 可以将 `arguments` 对象或 `NodeList` 转化为真正的数组，方便使用数组的各种方法。
-  
-- **浅拷贝数组**: 使用 `Array.from(array)` 可以创建一个浅拷贝的数组。
-
-- **数组填充**: 使用 `Array.from` 结合映射函数，可以生成特定规则的数组（如范围、模式等）。
-
-### 总结
-
-`Array.from()` 是一个强大的工具，允许从各种类数组或可迭代对象中创建数组，并提供了在创建过程中对元素进行处理的能力。它的应用场景广泛，能够有效地解决许多数组操作的问题。
