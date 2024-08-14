@@ -78,7 +78,20 @@ https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
 ### Todo List
 ### Calculator
 ### Calendar
+draw the layout then implement with logic and variables
 https://stackblitz.com/edit/stackblitz-starters-dhxsat?file=src%2Fapp%2Fcalendar%2Fcalendar.component.css
+event binding:
+```
+<td (click)="onClick(date)"> {{date!==0? date:''}}</td>
+```
+end>length时，取length，不会报错
+```
+array.slice(start, end)
+```
+border-collapse: Adjacent cells have shared borders (the collapsed-border table rendering model).
+```
+border-collapse: collapse;
+```
 
 
 ### Reactive Form
@@ -199,9 +212,12 @@ let arr = Array.from({ length: 5 }, (_, i) => i + 1);
 console.log(arr); // [1, 2, 3, 4, 5]
 ```
 
+字符串处理：
+
 ```javascript
 string.substr(start, length)
 string.slice(start, end) - End position (up to, but not including).
-string.substring(start, end) - End position (up to, but not including).(substring does not support negative indexing.)
+//substring does not support negative indexing.
+string.substring(start, end) - End position (up to, but not including).
 ```
 
