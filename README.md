@@ -80,6 +80,8 @@ https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
 ### Carousel
 ### Calculator
 ### Calendar
+https://stackblitz.com/edit/stackblitz-starters-dhxsat?description=An%20angular-cli%20project%20based%20on%20@angular/animations,%20@angular/common,%20@angular/compiler,%20@angular/core,%20@angular/forms,%20@angular/platform-browser,%20@angular/platform-browser-dynamic,%20@angular/router,%20core-js,%20rxjs,%20tslib%20and%20zone.js&file=src%2Fapp%2Fcalendar%2Fcalendar.component.html,src%2Fapp%2Fcalendar%2Fcalendar.component.ts,src%2Fapp%2Fcalendar%2Fcalendar.component.css&template=node&title=Angular%20Starter
+
 ### Reactive Form
 ### Custom Pipe
 
