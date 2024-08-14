@@ -76,14 +76,13 @@ https://stackblitz.com/edit/stackblitz-starters-adgfw3?file=src%2Fmain.ts
 https://stackblitz.com/edit/angular-ssdwkz?file=src%2Fapp%2Fapp.component.ts
 
 ### Todo List
-
-### Carousel
 ### Calculator
 ### Calendar
-https://stackblitz.com/edit/stackblitz-starters-dhxsat?description=An%20angular-cli%20project%20based%20on%20@angular/animations,%20@angular/common,%20@angular/compiler,%20@angular/core,%20@angular/forms,%20@angular/platform-browser,%20@angular/platform-browser-dynamic,%20@angular/router,%20core-js,%20rxjs,%20tslib%20and%20zone.js&file=src%2Fapp%2Fcalendar%2Fcalendar.component.html,src%2Fapp%2Fcalendar%2Fcalendar.component.ts,src%2Fapp%2Fcalendar%2Fcalendar.component.css&template=node&title=Angular%20Starter
+https://stackblitz.com/edit/stackblitz-starters-dhxsat?file=src%2Fapp%2Fcalendar%2Fcalendar.component.css
+
 
 ### Reactive Form
-### Custom Pipe
+### Custom Pipe and Directive
 
 ## Tips and Resources:
 ### Angular Offcial Document
@@ -117,3 +116,20 @@ Angular 17 Grammer
 ```
 
 ## Angular’s main libraries, versions, and functionalities:
+import { CommonModule } from '@angular/common'; 
+What CommonModule Includes:
+	1.	Common Directives:
+	•	NgIf: Conditionally includes or excludes a template based on the value of an expression.
+	•	NgForOf: Iterates over a collection (like an array) and repeats a template for each item.
+	•	NgSwitch, NgSwitchCase, NgSwitchDefault: Allows for conditional rendering of templates based on the value of an expression.
+	•	NgClass, NgStyle: Dynamically adds or removes CSS classes and styles based on expressions.
+	2.	Common Pipes:
+	•	DatePipe: Formats dates according to a given format.
+	•	UpperCasePipe, LowerCasePipe: Transforms text to uppercase or lowercase.
+	•	CurrencyPipe: Formats numbers as currency.
+	•	JsonPipe: Converts objects to JSON strings.
+	•	DecimalPipe: Formats numbers with decimal points.
+	•	PercentPipe: Formats numbers as percentages.
+	3.	Common Services:
+	•	Location: Provides access to the browser’s URL and allows for navigation.
+	•	Title: Allows setting the title of the current HTML document.
