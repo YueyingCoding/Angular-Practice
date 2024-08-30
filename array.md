@@ -2,78 +2,19 @@
 
 In contrast to variables, an array can store _multiple values_. Each value in an array has an _index_, and each index has _a reference in a memory address_. Each value can be accessed by using their _indexes_. The index of an array starts from _zero_, and the  index of the last element is less by one from the length of the array.
 
-An array is a collection of different data types which are ordered and changeable(modifiable). An array allows storing duplicate elements and different data types. An array can be empty, or it may have different data type values.
+An array is a collection of different data types which are ordered and changeable(modifiable). 
+An array allows storing duplicate elements and different data types. 
+An array can be empty, or it may have different data type values.
 
 ### How to create an empty array
 
 In JavaScript, we can create an array in different ways. Let us see different ways to create an array.
-It is very common to use _const_ instead of _let_ to declare an array variable. If you ar using const it means you do not use that variable name again.
-
-- Using Array constructor
+It is very common to use _const_ instead of _let_ to declare an array variable. 
 
 ```js
-// syntax
-const arr = Array()
-// or
-// let arr = new Array()
-console.log(arr) // []
-```
-
-- Using square brackets([])
-
-```js
-// syntax
 // This the most recommended way to create an empty list
 const arr = []
 console.log(arr)
-```
-
-### How to create an array with values
-
-Array with initial values. We use _length_ property to find the length of an array.
-
-```js
-const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
-const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
-const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of strings, vegetables
-const animalProducts = ['milk', 'meat', 'butter', 'yoghurt'] // array of strings, products
-const webTechs = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB'] // array of web technologies
-const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] // array of strings, countries
-
-// Print the array and its length
-
-console.log('Numbers:', numbers)
-console.log('Number of numbers:', numbers.length)
-
-console.log('Fruits:', fruits)
-console.log('Number of fruits:', fruits.length)
-
-console.log('Vegetables:', vegetables)
-console.log('Number of vegetables:', vegetables.length)
-
-console.log('Animal products:', animalProducts)
-console.log('Number of animal products:', animalProducts.length)
-
-console.log('Web technologies:', webTechs)
-console.log('Number of web technologies:', webTechs.length)
-
-console.log('Countries:', countries)
-console.log('Number of countries:', countries.length)
-```
-
-```sh
-Numbers: [0, 3.14, 9.81, 37, 98.6, 100]
-Number of numbers: 6
-Fruits: ['banana', 'orange', 'mango', 'lemon']
-Number of fruits: 4
-Vegetables: ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
-Number of vegetables: 5
-Animal products: ['milk', 'meat', 'butter', 'yoghurt']
-Number of animal products: 4
-Web technologies: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB']
-Number of web technologies: 7
-Countries: ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway']
-Number of countries: 5
 ```
 
 - Array can have items of different data types
@@ -91,178 +32,25 @@ console.log(arr)
 
 ### Creating an array using split
 
-As we have seen in the earlier section, we can split a string at different positions, and we can change to an array. Let us see the examples below.
-
 ```js
 let js = 'JavaScript'
 const charsInJavaScript = js.split('')
-
 console.log(charsInJavaScript) // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
-
-let companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
-const companies = companiesString.split(',')
-
-console.log(companies) // ["Facebook", " Google", " Microsoft", " Apple", " IBM", " Oracle", " Amazon"]
-let txt =
-  'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-const words = txt.split(' ')
-
-console.log(words)
-// the text has special characters think how you can just get only the words
-// ["I", "love", "teaching", "and", "empowering", "people.", "I", "teach", "HTML,", "CSS,", "JS,", "React,", "Python"]
 ```
 
 ### Accessing array items using index
 
 We access each element in an array using their index. An array index starts from 0. The picture below clearly shows the index of each element in the array.
 
-![arr index](../images/array_index.png)
-
-```js
-const fruits = ['banana', 'orange', 'mango', 'lemon']
-let firstFruit = fruits[0] // we are accessing the first item using its index
-
-console.log(firstFruit) // banana
-
-secondFruit = fruits[1]
-console.log(secondFruit) // orange
-
-let lastFruit = fruits[3]
-console.log(lastFruit) // lemon
-// Last index can be calculated as follows
-
-let lastIndex = fruits.length - 1
-lastFruit = fruits[lastIndex]
-
-console.log(lastFruit)  // lemon
-```
-
-```js
-const numbers = [0, 3.14, 9.81, 37, 98.6, 100]  // set of numbers
-
-console.log(numbers.length)  // => to know the size of the array, which is 6
-console.log(numbers)         // -> [0, 3.14, 9.81, 37, 98.6, 100]
-console.log(numbers[0])      //  -> 0
-console.log(numbers[5])      //  -> 100
-
-let lastIndex = numbers.length - 1;
-console.log(numbers[lastIndex]) // -> 100
-```
-
-```js
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-] // List of web technologies
-
-console.log(webTechs)        // all the array items
-console.log(webTechs.length) // => to know the size of the array, which is 7
-console.log(webTechs[0])     //  -> HTML
-console.log(webTechs[6])     //  -> MongoDB
-
-let lastIndex = webTechs.length - 1
-console.log(webTechs[lastIndex]) // -> MongoDB
-```
-
-```js
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-] // List of countries
-
-console.log(countries)      // -> all countries in array
-console.log(countries[0])   //  -> Albania
-console.log(countries[10])  //  -> Kenya
-
-let lastIndex = countries.length - 1;
-console.log(countries[lastIndex]) //  -> Kenya
-```
-
-```js
-const shoppingCart = [
-  'Milk',
-  'Mango',
-  'Tomato',
-  'Potato',
-  'Avocado',
-  'Meat',
-  'Eggs',
-  'Sugar'
-] // List of food products
-
-console.log(shoppingCart) // -> all shoppingCart in array
-console.log(shoppingCart[0]) //  -> Milk
-console.log(shoppingCart[7]) //  -> Sugar
-
-let lastIndex = shoppingCart.length - 1;
-console.log(shoppingCart[lastIndex]) //  -> Sugar
-```
-
 ### Modifying array element
 
 An array is mutable(modifiable). Once an array is created, we can modify the contents of the array elements.
 
-```js
-const numbers = [1, 2, 3, 4, 5]
-numbers[0] = 10      // changing 1 at index 0 to 10
-numbers[1] = 20      // changing  2 at index 1 to 20
-
-console.log(numbers) // [10, 20, 3, 4, 5]
-
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
-
-countries[0] = 'Afghanistan'  // Replacing Albania by Afghanistan
-let lastIndex = countries.length - 1
-countries[lastIndex] = 'Korea' // Replacing Kenya by Korea
-
-console.log(countries)
-```
-
-```sh
-["Afghanistan", "Bolivia", "Canada", "Denmark", "Ethiopia", "Finland", "Germany", "Hungary", "Ireland", "Japan", "Korea"]
-```
 
 ### Methods to manipulate array
 
 There are different methods to manipulate an array. These are some of the available methods to deal with arrays:_Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift_
 
-#### Array Constructor
-
-Array:To create an array.
-
-```js
-const arr = Array() // creates an an empty array
-console.log(arr)
-
-const eightEmptyValues = Array(8) // it creates eight empty values
-console.log(eightEmptyValues) // [empty x 8]
-```
 
 #### Creating static values with fill
 
@@ -270,16 +58,9 @@ fill: Fill all the array elements with a static value
 
 ```js
 const arr = Array() // creates an an empty array
-console.log(arr)
 
 const eightXvalues = Array(8).fill('X') // it creates eight element values filled with 'X'
 console.log(eightXvalues) // ['X', 'X','X','X','X','X','X','X']
-
-const eight0values = Array(8).fill(0) // it creates eight element values filled with '0'
-console.log(eight0values) // [0, 0, 0, 0, 0, 0, 0, 0]
-
-const four4values = Array(4).fill(4) // it creates 4 element values filled with '4'
-console.log(four4values) // [4, 4, 4, 4]
 ```
 
 #### Concatenating array using concat
@@ -294,47 +75,19 @@ const thirdList = firstList.concat(secondList)
 console.log(thirdList) // [1, 2, 3, 4, 5, 6]
 ```
 
-```js
-const fruits = ['banana', 'orange', 'mango', 'lemon']                 // array of fruits
-const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of vegetables
-const fruitsAndVegetables = fruits.concat(vegetables)                 // concatenate the two arrays
-
-console.log(fruitsAndVegetables)
-```
-
-```sh
-["banana", "orange", "mango", "lemon", "Tomato", "Potato", "Cabbage", "Onion", "Carrot"]
-```
-
 #### Getting array length
 
 Length:To know the size of the array
 
-```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers.length) // -> 5 is the size of the array
-```
-
 #### Getting index an element in arr array
 
 indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
-
-```js
-const numbers = [1, 2, 3, 4, 5]
-
-console.log(numbers.indexOf(5)) // -> 4
-console.log(numbers.indexOf(0)) // -> -1
-console.log(numbers.indexOf(1)) // -> 0
-console.log(numbers.indexOf(6)) // -> -1
-```
 
 Check an element if it exist in an array.
 
 - Check items in a list
   
 ```js
-// let us check if a banana exist in the array
-
 const fruits = ['banana', 'orange', 'mango', 'lemon']
 let index = fruits.indexOf('banana')  // 0
 
@@ -343,82 +96,22 @@ if(index === -1){
 } else {
     console.log('This fruit does exist in the array')
 }
-// This fruit does exist in the array
 
-// we can use also ternary here
+// use also ternary here
 index === -1 ? console.log('This fruit does not exist in the array'): console.log('This fruit does exist in the array')
-
-// let us check if an avocado exist in the array
-let indexOfAvocado = fruits.indexOf('avocado')  // -1, if the element not found index is -1
-if(indexOfAvocado === -1){
-   console.log('This fruit does not exist in the array')  
-} else {
-    console.log('This fruit does exist in the array')
-}
-// This fruit does not exist in the array
 ```
-
-#### Getting last index of an element in array
 
 lastIndexOf: It gives the position of the last item in the array. If it exist, it returns the index else it returns -1.
 
-```js
-const numbers = [1, 2, 3, 4, 5, 3, 1, 2]
-
-console.log(numbers.lastIndexOf(2)) // 7
-console.log(numbers.lastIndexOf(0)) // -1
-console.log(numbers.lastIndexOf(1)) //  6
-console.log(numbers.lastIndexOf(4)) //  3
-console.log(numbers.lastIndexOf(6)) // -1
-```
-
 includes:To check if an item exist in an array. If it exist it returns the true else it returns false.
-
-```js
-const numbers = [1, 2, 3, 4, 5]
-
-console.log(numbers.includes(5)) // true
-console.log(numbers.includes(0)) // false
-console.log(numbers.includes(1)) // true
-console.log(numbers.includes(6)) // false
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-] // List of web technologies
-
-console.log(webTechs.includes('Node'))  // true
-console.log(webTechs.includes('C'))     // false
-```
 
 #### Checking array
 
 Array.isArray:To check if the data type is an array
 
-```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(Array.isArray(numbers)) // true
-
-const number = 100
-console.log(Array.isArray(number)) // false
-```
-
 #### Converting array to string
 
 toString:Converts array to string
-
-```js
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers.toString()) // 1,2,3,4,5
-
-const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
-```
 
 #### Joining array elements
 
@@ -427,124 +120,31 @@ join: It is used to join the elements of the array, the argument we passed in th
 ```js
 const numbers = [1, 2, 3, 4, 5]
 console.log(numbers.join()) // 1,2,3,4,5
-
-const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-
-console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
-console.log(names.join('')) //AsabenehMathiasEliasBrook
-console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
-console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
-console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-] // List of web technologies
-
-console.log(webTechs.join())       // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
-console.log(webTechs.join(' # '))  // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
 ```
 
 #### Slice array elements
 
 Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
 
-```js
-  const numbers = [1,2,3,4,5]
-
-  console.log(numbers.slice()) // -> it copies all  item
-  console.log(numbers.slice(0)) // -> it copies all  item
-  console.log(numbers.slice(0, numbers.length)) // it copies all  item
-  console.log(numbers.slice(1,4)) // -> [2,3,4] // it doesn't include the ending position
-```
-
 #### Splice method in array
 
 Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.
-
-```js
-  const numbers = [1, 2, 3, 4, 5]
-  numbers.splice()
-  console.log(numbers)                // -> remove all items
-
-```
-
-```js
-  const numbers = [1, 2, 3, 4, 5]
-	numbers.splice(0,1)
-  console.log(numbers)            // remove the first item
-```
-
-```js
-  const numbers = [1, 2, 3, 4, 5, 6]
-	numbers.splice(3, 3, 7, 8, 9)
-  console.log(numbers.splice(3, 3, 7, 8, 9))  // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
-```
 
 #### Adding item to an array using push
 
 Push: adding item in the end. To add item to the end of an existing array we use the push method.
 
-```js
-// syntax
-const arr  = ['item1', 'item2','item3']
-arr.push('new item')
-console.log(arr)
-// ['item1', 'item2','item3','new item']
-```
-
-```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.push(6)
-console.log(numbers) // -> [1,2,3,4,5,6]
-
-numbers.pop() // -> remove one item from the end
-console.log(numbers) // -> [1,2,3,4,5]
-```
-
-```js
-let fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.push('apple')
-console.log(fruits)    // ['banana', 'orange', 'mango', 'lemon', 'apple']
-
-fruits.push('lime')
-console.log(fruits)   // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
-```
-
 #### Removing the end element using pop
 
 pop: Removing item in the end.
-
-```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.pop() // -> remove one item from the end
-console.log(numbers) // -> [1,2,3,4]
-```
 
 #### Removing an element from the beginning
 
 shift: Removing one array element in the beginning of the array.
 
-```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.shift() // -> remove one item from the beginning
-console.log(numbers) // -> [2,3,4,5]
-```
-
 #### Add an element from the beginning
 
 unshift: Adding array element in the beginning of the array.
-
-```js
-const numbers = [1, 2, 3, 4, 5]
-numbers.unshift(0) // -> add one item from the beginning
-console.log(numbers) // -> [0,1,2,3,4,5]
-```
 
 #### Reversing array order
 
@@ -554,9 +154,6 @@ reverse: reverse the order of an array.
 const numbers = [1, 2, 3, 4, 5]
 numbers.reverse() // -> reverse array order
 console.log(numbers) // [5, 4, 3, 2, 1]
-
-numbers.reverse()
-console.log(numbers) // [1, 2, 3, 4, 5]
 ```
 
 #### Sorting elements in array
@@ -577,146 +174,330 @@ const webTechs = [
 webTechs.sort()
 console.log(webTechs) // ["CSS", "HTML", "JavaScript", "MongoDB", "Node", "React", "Redux"]
 
-webTechs.reverse() // after sorting we can reverse it
-console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HTML", "CSS"]
 ```
 
 ### Array of arrays
 
 Array can store different data types including an array itself. Let us create an array of arrays
 
+## Higher Order Function
+
+Higher order functions are functions which take other function as a parameter or return a function as a value. The function passed as a parameter is called callback.
+
+### Callback
+
+A callback is a function which can be passed as parameter to other function. 
+
+### Returning function
+
+Higher order functions return function as a value
+​
 ```js
-const firstNums = [1, 2, 3]
-const secondNums = [1, 4, 9]
-
-const arrayOfArray =  [[1, 2, 3], [1, 2, 3]]
-console.log(arrayOfArray[0]) // [1, 2, 3]
-
- const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
- const backEnd = ['Node','Express', 'MongoDB']
- const fullStack = [frontEnd, backEnd]
- console.log(fullStack)   // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
- console.log(fullStack.length)  // 2
- console.log(fullStack[0])  // ["HTML", "CSS", "JS", "React", "Redux"]
- console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
+// Higher order function returning an other function
+const higherOrder = n => {
+  const doSomething = m => {
+    const doWhatEver = t => {
+      return 2 * n + 3 * m + t
+    }
+    return doWhatEver
+  }
+  return doSomething
+}
+console.log(higherOrder(2)(3)(10))
 ```
 
-🌕  You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
+### Setting time
 
-## 💻 Exercise
+In JavaScript we can execute some activities in a certain interval of time or we can schedule(wait) for some time to execute some activities.
 
-### Exercise: Level 1
+- setInterval
+- setTimeout
+
+#### Setting Interval using a setInterval function
+
+In JavaScript, we use setInterval higher order function to do some activity continuously with in some interval of time. 
+The setInterval global method take a callback function and a duration as a parameter. 
+The duration is in milliseconds and the callback will be always called in that interval of time.
 
 ```js
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-]
+// syntax
+function callback() {
+  // code goes here
+}
+setInterval(callback, duration)
 ```
 
-1. Declare an _empty_ array;
-2. Declare an array with more than 5 number of elements
-3. Find the length of your array
-4. Get the first item, the middle item and the last item of the array
-5. Declare an array called _mixedDataTypes_, put different data types in the array and find the length of the array. The array size should  be greater than 5
-6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
-7. Print the array using _console.log()_
-8. Print the number of companies in the array
-9. Print the first company, middle and last company
-10. Print out each company
-11. Change each company name  to uppercase one by one and print them out
-12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
-13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is _not found_
-14. Filter out companies which have more than one 'o' without the filter method
-15. Sort the array using _sort()_ method
-16. Reverse the array using _reverse()_ method
-17. Slice out the first 3 companies from the array
-18. Slice out the last 3 companies from the array
-19. Slice out the middle IT company or companies from the array
-20. Remove the first IT company from the array
-21. Remove the middle IT company or companies from the array
-22. Remove the last IT company from the array
-23. Remove all IT companies
+```js
+function sayHello() {
+  console.log('Hello')
+}
+setInterval(sayHello, 1000) // it prints hello in every second, 1000ms is 1s
+```
 
-### Exercise: Level 2
+#### Setting a time using a setTimeout
 
-1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
-1. First remove all the punctuations and change the string to array and count the number of words in the array
+In JavaScript, we use setTimeout higher order function to execute some action at some time in the future. 
+The setTimeout global method take a callback function and a duration as a parameter. 
+The duration is in milliseconds and the callback wait for that amount of time.
 
-    ```js
-    let text =
-    'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-    console.log(words)
-    console.log(words.length)
-    ```
+```js
+// syntax
+function callback() {
+  // code goes here
+}
+setTimeout(callback, duration) // duration in milliseconds
+```
 
-    ```sh
-    ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
-  
-    13
-    ```
+```js
+function sayHello() {
+  console.log('Hello')
+}
+setTimeout(sayHello, 2000) // it prints hello after it waits for 2 seconds.
+```
 
-1. In the following shopping cart add, remove, edit items
+## Functional Programming
 
-    ```js
-    const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
-    ```
+Instead of writing regular loop, latest version of JavaScript introduced lots of built in methods which can help us to solve complicated problems. All builtin methods take callback function. In this section, we will see _forEach_, _map_, _filter_, _reduce_, _find_, _every_, _some_, and _sort_.
 
-   - add 'Meat' in the beginning of your shopping cart if it has not been already added
-   - add Sugar at the end of you shopping cart if it has not been already added
-   - remove 'Honey' if you are allergic to honey
-   - modify Tea to 'Green Tea'
-1. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-1. In the webTechs array check if Sass exists in the array  and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
-1. Concatenate the following two variables and store it in a fullStack variable.
+### forEach
 
-    ```js
-    const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-    const backEnd = ['Node','Express', 'MongoDB']
-  
-    console.log(fullStack)
-    ```
+_forEach_: Iterate an array elements. We use _forEach_ only with arrays. It takes a callback function with elements, index parameter and array itself. The index and the array optional.
 
-    ```sh
-    ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
-    ```
+```js
+arr.forEach(function (element, index, arr) {
+  console.log(index, element, arr)
+})
+// The above code can be written using arrow function
+arr.forEach((element, index, arr) => {
+  console.log(index, element, arr)
+})
+// The above code can be written using arrow function and explicit return
+arr.forEach((element, index, arr) => console.log(index, element, arr))
+```
 
-### Exercise: Level 3
+### map
 
-1. The following is an array of 10 students ages:
+_map_: Iterate an array elements and modify the array elements. It takes a callback function with elements,  index , array parameter and return a new array.
 
-    ```js
-    const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
-    ```
+```js
+const modifiedArray = arr.map(function (element, index, arr) {
+  return element
+})
+```
 
-    - Sort the array and find the min and max age
-    - Find the median age(one middle item or two middle items divided by two)
-    - Find the average age(all items divided by number of items)
-    - Find the range of the ages(max minus min)
-    - Compare the value of (min - average) and (max - average), use _abs()_ method
-1.Slice the first ten countries from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
-1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
-2. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
-  
-🎉 CONGRATULATIONS ! 🎉
+```js
+/* Arrow function and explicit return
+const modifiedArray = arr.map((element,index) => element);
+*/
+//Example
+const numbers = [1, 2, 3, 4, 5]
+const numbersSquare = numbers.map((num) => num * num)
 
-[<< Day 4](../04_Day_Conditionals/04_day_Conditionals.md) | [Day 6 >>](../06_Day_Loops/06_day_loops.md)
+console.log(numbersSquare)
+```
+
+/*
+// Arrow function
+const countriesToUpperCase = countries.map((country) => {
+  return country.toUpperCase();
+})
+*/
+```
+
+### filter
+
+_Filter_: Filter out items which full fill filtering conditions and return a new array.
+
+```js
+//Filter countries containing land
+const countriesContainingLand = countries.filter((country) =>country.includes('land'))
+console.log(countriesContainingLand)
+```
+
+```sh
+['Finland', 'Ireland']
+```
+
+
+```js
+const scores = [
+  { name: 'Asabeneh', score: 95 },
+   { name: 'Lidiya', score: 98 },
+  { name: 'Mathias', score: 80 },
+  { name: 'Elias', score: 50 },
+  { name: 'Martha', score: 85 },
+  { name: 'John', score: 100 },
+]
+
+const scoresGreaterEighty = scores.filter((score) => score.score > 80)
+console.log(scoresGreaterEighty)
+```
+
+```sh
+[{name: 'Asabeneh', score: 95}, { name: 'Lidiya', score: 98 },{name: 'Martha', score: 85},{name: 'John', score: 100}]
+```
+
+### reduce
+
+_reduce_: Reduce takes a callback function. The call back function takes accumulator,  current, and optional initial value as a parameter and returns a single value. It is a good practice to define an initial value for the accumulator value. If we do not specify this parameter, by default accumulator will get array `first value`. If our array is an _empty array_, then `Javascript` will throw an error.
+
+```js
+arr.reduce((acc, cur) => {
+  // some operations goes here before returning a value
+ return 
+}, initialValue)
+```
+
+```js
+const numbers = [1, 2, 3, 4, 5]
+const sum = numbers.reduce((acc, cur) => acc + cur, 0)
+
+console.log(sum)
+```
+
+```js
+15
+```
+
+### every
+
+_every_: Check if all the elements are similar in one aspect. It returns boolean
+
+```js
+const bools = [true, true, true, true]
+const areAllTrue = bools.every((b) => b === true) // Are all true? 
+
+console.log(areAllTrue) // true
+```
+
+```sh
+true
+
+```
+
+### find
+
+_find_: Return the first element which satisfies the condition
+
+```js
+const ages = [24, 22, 25, 32, 35, 18]
+const age = ages.find((age) => age < 20)
+
+console.log(age)
+```
+
+```js
+18
+```
+
+```js
+const scores = [
+  { name: 'Asabeneh', score: 95 },
+  { name: 'Mathias', score: 80 },
+  { name: 'Elias', score: 50 },
+  { name: 'Martha', score: 85 },
+  { name: 'John', score: 100 },
+]
+
+const user = scores.find((user) => user.score > 80)
+console.log(user)
+```
+
+```sh
+{ name: "Asabeneh", score: 95 }
+```
+
+### findIndex
+
+_findIndex_: Return the position of the first element which satisfies the condition
+
+```js
+const ages = [24, 22, 25, 32, 35, 18]
+
+const age = ages.findIndex((age) => age < 20)
+console.log(age) // 5
+```
+
+### some
+
+_some_: Check if some of the elements are similar in one aspect. It returns boolean
+
+```js
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const bools = [true, true, true, true]
+
+const areSomeTrue = bools.some((b) =>  b === true)
+
+console.log(areSomeTrue) //true
+```
+
+```js
+const areSomeNum = names.some((name) => typeof name === 'number')
+console.log(areSomeNum) // false
+```
+
+### sort
+
+_sort_: The sort methods arranges the array elements either ascending or descending order. By default, the **_sort()_** method sorts values as strings.This works well for string array items but not for numbers. If number values are sorted as strings and it give us wrong result. Sort method modify the original array. It is recommended to copy the original data before you start using _sort_ method.
+
+#### Sorting string values
+
+```js
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+console.log(products.sort()) // ['Apple', 'Carrot', 'Coffee', 'Honey', 'Milk', 'Sugar']
+//Now the original products array  is also sorted
+```
+
+#### Sorting Numeric values
+
+As you can see in the example below, 100 came first after sorted in ascending order. Sort converts items to string , since '100' and other numbers compared, 1 which the beginning of the string '100' became the smallest. To avoid this, we use a compare call back function inside the sort method, which return a negative, zero or positive.
+
+```js
+const numbers = [9.81, 3.14, 100, 37]
+// Using sort method to sort number items provide a wrong result. see below
+console.log(numbers.sort()) //[100, 3.14, 37, 9.81]
+numbers.sort(function (a, b) {
+  return a - b
+})
+
+console.log(numbers) // [3.14, 9.81, 37, 100]
+
+numbers.sort(function (a, b) {
+  return b - a
+})
+console.log(numbers) //[100, 37, 9.81, 3.14]
+```
+
+#### Sorting Object Arrays
+
+Whenever we sort objects in an array, we use the object key to compare. Let us see the example below.
+
+```js
+objArr.sort(function (a, b) {
+  if (a.key < b.key) return -1
+  if (a.key > b.key) return 1
+  return 0
+})
+
+// or
+
+objArr.sort(function (a, b) {
+  if (a['key'] < b['key']) return -1
+  if (a['key'] > b['key']) return 1
+  return 0
+})
+
+const users = [
+  { name: 'Asabeneh', age: 150 },
+  { name: 'Brook', age: 50 },
+  { name: 'Eyob', age: 100 },
+  { name: 'Elias', age: 22 },
+]
+users.sort((a, b) => {
+  if (a.age < b.age) return -1
+  if (a.age > b.age) return 1
+  return 0
+})
+console.log(users) // sorted ascending
+// [{…}, {…}, {…}, {…}]
+```
