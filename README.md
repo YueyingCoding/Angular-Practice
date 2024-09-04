@@ -135,56 +135,6 @@ What CommonModule Includes:
 2. Common Pipes: DatePipe, UpperCasePipe, CurrencyPipe, JsonPipe
 3. Common Services: Location: Provides access to the browser’s URL and allows for navigation.
 
- 
-Array:
-`Array.from()` 是一个 JavaScript 内置方法，用于从类数组对象或可迭代对象（如 `Map`、`Set`、字符串）创建一个新的数组实例。这个方法非常灵活，也可以用于数组的浅拷贝、将对象转化为数组，以及通过映射函数创建特定模式的数组。
-
-### 示例用法
-
-1. **从类数组对象创建数组**:
-
-```javascript
-let arrayLike = { length: 3, 0: 'a', 1: 'b', 2: 'c' };
-let arr = Array.from(arrayLike);
-
-console.log(arr); // ['a', 'b', 'c']
-```
-
-2. **从字符串创建数组**:
-
-```javascript
-let str = 'hello';
-let arr = Array.from(str);
-
-console.log(arr); // ['h', 'e', 'l', 'l', 'o']
-```
-
-3. **从 Set 创建数组**:
-
-```javascript
-let set = new Set(['a', 'b', 'c']);
-let arr = Array.from(set);
-
-console.log(arr); // ['a', 'b', 'c']
-```
-
-4. **使用映射函数创建数组**:
-
-```javascript
-let arr = Array.from([1, 2, 3], x => x * 2);
-
-console.log(arr); // [2, 4, 6]
-```
-
-5. **创建指定长度的数组**:
-
-```javascript
-let arr = Array.from({ length: 5 }, (_, i) => i + 1);
-
-console.log(arr); // [1, 2, 3, 4, 5]
-```
-
-字符串处理：
 
 ```javascript
 string.substr(start, length)
